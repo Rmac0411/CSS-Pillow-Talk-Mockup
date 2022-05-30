@@ -17,8 +17,7 @@ img {
 /*********************************
 * General
 *********************************/
-
-body {
+body{
     background-color: snow;
     color: slategrey;
     margin: 20px 0;
@@ -30,12 +29,11 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
 
-h2 {
+h2{
     font-size: 1em;
 }
-
 h1 {
-    font-family: 'Fredoka One', cursive;
+font-family: 'Fredoka One', cursive;
 }
 /*********************************
 * Header
@@ -45,7 +43,7 @@ header{
     margin: auto;
     display: flex;
     justify-content: space-between;
-    margin-bottom:20px;
+    margin-bottom: 20px;
 }
 
 header div {
@@ -55,42 +53,44 @@ header div {
     margin-bottom: 20px;
 }
 
-header h1{
+header h1 {
     text-align: left;
 }
-
-header div:last-child{
-    display: flex;
-    align-items: center;
-}
-
+ header div:last-child {
+     display: flex;
+     align-items: center;
+ }
 /*********************************
 * Container
 *********************************/
 .container{
     display: flex;
     width: 90%;
-    margin:auto;
+    margin: auto;
     justify-content: space-between;
 }
 
 /*********************************
 * Aside/Nav
 *********************************/
-aside{
+/*********************************
+ * Aside/Nav
+ *********************************/ 
+ aside {
     flex-basis: 15%;
-    min-width:15%;
+    min-width: 15%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
-ul{
+ul {
     padding: 0;
 }
-li{
+li {
     list-style: none;
     text-align: left;
 }
+
 /*********************************
 * Main
 *********************************/
@@ -98,6 +98,22 @@ main{
     width: 85%;
     flex-basis: 85%;
 }
+div[class$='row']  {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1em;
+  }
+ .top-row img {
+    width: 100%;
+ }
+ .middle-row img {
+   width: 49%;
+ }
+ .bottom-row img {
+   width: 32%;
+ }                                  
+
 /*********************************
 * Footer
 *********************************/              
